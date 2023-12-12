@@ -1,0 +1,288 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav_bar {
+    overflow: hidden;
+    background-color: #010b10;
+    background-blend-mode: overlay;
+    position: static;
+    height: 55px;
+}
+.bb {
+    background: url(https://img.freepik.com/premium-photo/assorted-indian-recipes-food-various_79295-7226.jpg?size=626&ext=jpg&ga=GA1.1.1446940252.1665584503&semt=ais://img.freepik.com/free-photo/selection-food-tray_1340-23421.jpg?size=626&ext=jpg&ga=GA1.2.1446940252.1665584503&semt=sph://img.freepik.com/free-photo/top-view-food-frame-with-copy-space_23-2148723447.jpg?size=626&ext=jpg&ga=GA1.2.1446940252.1665584503&semt=sph);
+    background-repeat: no-repeat;
+    height: 737px;
+    background-size: 1521px 1000px;
+}
+.logo {
+    float: left;
+    padding-left: 32px;
+    font-size: 34px;
+    font-family: monospace;
+    color: white;
+    position: relative;
+    top: 2px;
+}
+.search input {
+    border: #726f6f solid 2px;
+    height: 13px;
+    border-radius: 23px;
+    width: 269px;
+    padding: 10px;
+    /* margin-bottom: -84px; */
+    font-size: 20px;
+}
+.search {
+    position: relative;
+    top: 10px;
+    left: 70px;
+    height: 1px;
+}
+.nav_bar ul li {
+    top: -2px;
+    list-style: none;
+    float: right;
+    position: relative;
+    padding-bottom: 10px;
+}
+.nav_bar li a {
+    text-decoration: none;
+    margin-left: 7px;
+    padding: 25px;
+    font-size: 24px;
+    margin-right: 32px;
+    color: #fbf8fb;
+}
+.nav_bar li a:hover {
+    color: #E65100;
+}
+article{
+    /* font-size: 20px; */
+    font-size: 50px;
+    padding: 113px;
+    text-align: center;
+    font-family:sans-serif;
+}
+.text {
+    font-size: 44px;
+    padding: 68px;
+    text-align: center;
+    color: antiquewhite;
+    padding-right: -27px;
+    background: linear-gradient(35deg, black, transparent);
+    font-family: fangsong;
+    position: relative;
+    top: 53px;
+}
+.text:hover{
+    color:#4c9d1a;
+}
+body .sec {
+    background-repeat: no-repeat;
+    position: relative;
+    top: -67px;
+    background:black;
+    height: 697px;
+    width: 100%;
+}
+#hi {
+    font-size: 50px;
+    position: relative;
+    color: white;
+    animation: example 3s infinite;
+    animation-timing-function: ease-in-out;
+}
+#img1 {
+    border-radius: 133px;
+    height: 280px;
+    position: relative;
+    border: 1px solid grey;
+    left: 134px;
+    top: 59px;
+}
+@keyframes example {
+    from{left:0px;}
+    to{left:50px;}
+    
+}
+
+.about {
+    background-color: white;
+    height: 328px;
+    width: 610px;
+    font-size: 16px;
+    border: 2px solid black;
+    padding: 69px;
+    margin-top: -286px;
+    padding-top: 10px;
+    /* margin-bottom: 37px; */
+    margin-left: 39%;
+    text-align: center;
+}
+
+body .third {
+    background: #424242;
+    height: 921px;
+    width: 100%;
+    position: relative;
+    top: -83px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 95px;
+}
+.col1 {
+    margin-left: 102px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 346px;
+}
+.col1 #btn {
+    left: 120px;
+    box-shadow: 0px 2px 17px black;
+    bottom: 51px;
+    background: #120101;
+    color: #f3eeee;
+    position: relative;
+    height: 35px;
+}
+.row img {
+    height: 192px;
+    width: 227px;
+    background-color: #efedf1;
+    padding: 26px;
+    border-radius: 5px;
+    margin-right: 28px;
+    padding-bottom: 78px;
+    border: 1px solid white;
+    /* display: flex; */
+    margin-left: 130px;
+    margin-top: 52px;
+    /* justify-content: center; */
+}
+.col img{
+    height: 192px;
+    width: 227px;
+    background-color: #efedf1;
+    padding: 26px;
+    border-radius: 5px;
+    margin-right: 28px;
+    padding-bottom: 78px;
+    border: 1px solid white;
+    /* display: flex; */
+    margin-left: 130px;
+    margin-top: 52px;
+}
+.col {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 95px;
+}
+
+
+.forth {
+    background-color: #B0BEC5;
+    height: 800px;
+    position: relative;
+    width: 100%;
+    top: -104px;
+}
+form {
+    text-align: center;
+    height: 392px;
+    position: relative;
+    top: 9%;
+    padding: 68px;
+    left: 32%;
+    color: #ffffff;
+    background: #060606;
+    font-size: 22px;
+    width: 396px;
+}
+form button {
+    box-shadow: 2px 2px 6px slategrey;
+    width: 92px;
+    height: 57px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    border-radius: 19px;
+    border: 1px solid black;
+    text-align: center;
+    position: relative;
+    left: 108px;
+}
+table td {
+    font-size: 28px;
+    position: relative;
+    bottom: 60px;
+    top:-29px
+}
+table input{
+    height: 32px;
+    font-size: 17px;
+    width: 221px;
+}
+footer {
+    background-color: black;
+    color: white;
+    height: 193px;
+    width: 100%;
+    position: relative;
+    bottom: 137px;
+}
+.fa-facebook {
+    background: #ffffff;
+    color: rgb(7, 7, 7);
+  }
+  .fa:hover {
+    opacity: 0.7;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    /* font-size: 5px; */
+    text-rendering: auto;
+    padding-top: 12px;
+    height: 39px;
+    width: 49px;
+    border: 1px solid black;
+    border-radius: 29px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  .fa-youtube {
+    background: #fbfbfb;
+    color: rgb(0, 0, 0);
+  }
+  .fa-instagram {
+    background: #fcfcfc;
+    color: rgb(0, 0, 0);
+  }
+  .fa-linkedin {
+    background: #ffffff;
+    color: rgb(10, 0, 0);
+  }  
+  #social {
+    position: relative;
+    top: 17px;
+    left: 636px;
+}
+#social a {
+    font-size: 31px;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+}
+footer p {
+    font-size: 27px;
+    text-align: center;
+    top: 27px;
+    position: relative;
+    left: -17px;
+    color: white;
+}
