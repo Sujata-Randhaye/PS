@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        th,td{
+            height: 70px;
+            width: 200px;
+            text-align: center;
+            font-size: 30px;
+        }
+        
+        th{
+            background:linear-gradient(pink,white);
+        }
+        #one{
+            background: gray;
+        }
+        #two{
+            background-color: rgba(200, 191, 191, 0.895);
+        }
+        table,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;         /* to collapse table td,th border seem one */
+            align-items: center;
+         }
+         table{
+             margin: 100px 400px 0px 400px;
+         }
+       
+        h1{
+            text-align: center;
+            font-family:Arial, Helvetica, sans-serif;
+            background-color: rgb(197, 137, 165);
+            border: 1px double black;
+            background-size: 20px;
+        }
+        body{
+            background-image: url(https://img.freepik.com/premium-psd/mathematics-background-with-rulers-calculators_23-2148458897.jpg?w=996);
+            background-repeat: no-repeat;
+            background-size: 100% 150%;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>ELECTRONIC DEVICES</h1>
+    <div class="tab">
+    <table>
+        <tr>
+        <th>Model no.</th>
+        <th>Device name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        </tr>
+        <tr id="one">
+            <td>I001</td>
+            <td>Laptop</td>
+            <td>4</td>
+            <td>Rs 50000</td>
+        </tr>
+        <tr id="two">
+            <td>I002</td>
+            <td>Mouse</td>
+            <td>8</td>
+            <td>Rs 500</td>
+        </tr>
+        <tr id="one">
+            <td>I003</td>
+            <td>Keyboard</td>
+            <td>3</td>
+            <td>Rs 1000</td>
+        </tr>
+        <tr id="two">
+            <td>I004</td>
+            <td>Joystick</td>
+            <td>4</td>
+            <td>Rs 2000</td>
+        </tr>
+    </table>
+    </div>
+    
+</body>
+</html>

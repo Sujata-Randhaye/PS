@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration Website</title>
+    <style>
+        /* CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(169, 169, 169, 0.395);
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #0074d9;
+            color: white;
+            border: none;
+            margin-left: 13px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0074d9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="login">
+        <h1>Login</h1>
+        <form id="loginForm" action="#">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#signup" onclick="showSignup()">Sign Up</a></p>
+        <p><a href="#forgot" onclick="showForgotPassword()">Forgot Password?</a></p>
+    </div>
+
+    <div class="container" id="signup" style="display: none;">
+        <h1>Sign Up</h1>
+        <form id="signupForm" action="#">
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="#login" onclick="showLogin()">Login</a></p>
+    </div>
+
+    <div class="container" id="loginSuccess" style="display: none;">
+        <h1>Login Success</h1>
+        <p>Welcome, [Username]</p>
+        <a href="#logout" onclick="showLogin()">Logout</a>
+    </div>
+
+    <div class="container" id="invalidPassword" style="display: none;">
+        <h1>Login Failed</h1>
+        <p>Your password is incorrect. Please try again.</p>
+        <a href="#login" onclick="showLogin()">Back to Login</a>
+    </div>
+
+    <div class="container" id="forgot" style="display: none;">
+        <h1>Forgot Password</h1>
+        <p>Enter your email address below to reset your password.</p>
+        <form id="forgotPasswordForm" action="#">
+            <input type="email" name="email" placeholder="Email Address" required>
+            <button type="submit">Reset Password</button>
+        </form>
+        <p>Remembered your password? <a href="#login" onclick="showLogin()">Login</a></p>
+    </div>
+
+    <script>
+        // JavaScript code here
+        function showLogin() {
+            hideAll();
+            document.getElementById('login').style.display = 'block';
+        }
+
+        function showSignup() {
+            hideAll();
+            document.getElementById('signup').style.display = 'block';
+        }
+
+        function showLoginSuccess() {
+            hideAll();
+            document.getElementById('loginSuccess').style.display = 'block';
+        }
+
+        function showInvalidPassword() {
+            hideAll();
+            document.getElementById('invalidPassword').style.display = 'block';
+        }
+
+        function showForgotPassword() {
+            hideAll();
+            document.getElementById('forgot').style.display = 'block';
+        }
+
+        function hideAll() {
+            document.getElementById('login').style.display = 'none';
+            document.getElementById('signup').style.display = 'none';
+            document.getElementById('loginSuccess').style.display = 'none';
+            document.getElementById('invalidPassword').style.display = 'none';
+            document.getElementById('forgot').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Functions</title> <!-- Fixed the title tag -->
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/free-photo/colourful-math-numbers-letters-top-view_23-2148416105.jpg?size=626&ext=jpg&ga=GA1.1.1341435169.1697110782&semt=ais');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        input[type="text"] { /* Fixed the input selector */
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+    width: 25%;
+    background-color: #ca61dc;
+    color: white;
+    padding: 4px 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+        div {
+            background-color: #d8bfbf;
+            width: 60%;
+            padding: 10px;
+            border: 2px solid #ab9a9a;
+        }
+    </style>
+</head>
+<body style="background-color:#e0dcd5">
+<div style="max-width: 900px; margin: auto;"> <!-- Fixed the main style attribute -->
+    <center>
+        <p>
+            <input type="text" id="str" placeholder="Enter String/Number">
+            <input type="submit" onclick="evalInput();" value="submit" name="sub"> <!-- Fixed the input type and function name -->
+        </p>
+        <br/>
+        <h2 style="color:#ffffff">Result:</h2>
+        <div id="result"></div>
+    </center>
+</div>
+
+<script>
+    function evalInput() { // Fixed function name
+        var str = document.getElementById("str").value;
+        if (!isNaN(str)) { // Check if it's a number
+            var num = parseInt(str);
+            var rev = 0, rem = 0;
+            while (num > 0) {
+                rem = num % 10;
+                rev = rev * 10 + rem;
+                num = parseInt(num / 10);
+            }
+            document.getElementById("result").innerHTML = "<p>Reverse of: <strong>" + str + " is " + rev + "</strong></p>";
+        } else {
+            var text = "<p>The Entered string is: <strong>" + str + "</strong></p>";
+            for (var i = 0; i < str.length; i++) {
+                if (
+                    str.charAt(i) === 'a' || str.charAt(i) === 'e' ||
+                    str.charAt(i) === 'i' || str.charAt(i) === 'o' ||
+                    str.charAt(i) === 'u' || str.charAt(i) === 'A' ||
+                    str.charAt(i) === 'E' || str.charAt(i) === 'I' ||
+                    str.charAt(i) === 'O' || str.charAt(i) === 'U'
+                ) {
+                    text += "<p>The Leftmost Vowel is: <strong>" + str.charAt(i) + "</strong></p>";
+                    var pos = i + 1;
+                    text += "<p>The Position of the Leftmost Vowel: <strong>" + pos + "</strong></p>";
+                    document.getElementById("result").innerHTML = text;
+                    return; // Exit the loop
+                }
+            }
+            text += "<p>The Entered String Has No Vowels</p>";
+            document.getElementById("result").innerHTML = text;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+P{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate (-50%, -50%);
+}
+body {
+    background-image: url(https://img.freepik.com/free-photo/shiny-gold-glitter-textured_53876-95531.jpg?w=996&t=st=1692262622~exp=1692263222~hmac=7cd200d…https://img.freepik.com/free-photo/close-up-golden-glitter_23-2148761513.jpg?w=996&t=st=1692262568~exp=1692263168~hmac=0aadff6…://img.freepik.com/free-vector/golden-particles-blurred-decorative-background_52683-17887.jpg?w=996&t=st=1692262360~exp=1692262960~hmac=d187f8f…https://img.freepik.com/free-vector/bokeh-background-with-golden-particles_52683-22161.jpg?w=996&t=st=1692262217~exp=1692262817~hmac=762d640…://img.freepik.com/premium-vector/pink-glitter-sparkle-transparent-background_302982-515.jpg?w=1060);
+    background-size: 100% 713px;
+    background-repeat: no-repeat;
+}
+</style>
+</head>
+<body> <p id="demo"></p>
+<script>
+var var1=setInterval(inTimer, 1000);
+var fs = 5;
+var ids=document.getElementById("demo");
+function inTimer(){
+ids.innerHTML='TEXT GROWING';
+ids.setAttribute('style', "font-size:"+fs
++"px; color: red");
+fs += 5;
+if(fs>= 50)
+{
+clearInterval(var1);
+var2= setInterval(deTimer, 1000);
+}
+}
+function deTimer()
+{
+fs -= 5;
+ids.innerHTML='TEXT SHRINKING';
+ids.setAttribute('style', "font-size:"
++fs+"px; color: blue");
+if(fs==5)
+{
+clearInterval (var2);
+}
+}
+</script>
+</body>
+</html>
